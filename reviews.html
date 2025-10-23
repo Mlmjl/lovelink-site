@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>评价与评论 · LoveLink</title>
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="assets/app.js"></script>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">LoveLink</a>
+    <a href="catalogue.html">用户目录</a>
+    <a href="match.html">匹配</a>
+    <a href="chat.html">聊天</a>
+    <a href="reviews.html">评价</a>
+    <a href="about.html">关于</a>
+    <a href="contact.html">联系</a>
+    <span style="float:right">
+      <a href="login.html">登录</a> / <a href="register.html">注册</a>
+    </span>
+  </nav>
+</header>
+<main>
+
+<div class="container">
+  <h2>用户评价</h2>
+  <form id="reviewForm">
+    <label>被评价用户</label>
+    <select id="reviewTarget"></select>
+    <label>评分（1-5）</label>
+    <select id="reviewRating">
+      <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+    </select>
+    <label>评论</label>
+    <textarea id="reviewText" rows="3" placeholder="说点什么..."></textarea>
+    <button type="submit">提交</button>
+  </form>
+  <h3>评价列表</h3>
+  <table class="table" id="reviewTable">
+    <thead><tr><th>对象</th><th>评分</th><th>评论</th><th>时间</th></tr></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+</main>
+<footer>
+  <div>© 2025 LoveLink — 教学用原型。不涉及真实数据。</div>
+  <div><a href="privacy.html">隐私与安全说明</a></div>
+</footer>
+</body>
+</html>

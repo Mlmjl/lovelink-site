@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>用户目录 · LoveLink</title>
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="assets/app.js"></script>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">LoveLink</a>
+    <a href="catalogue.html">用户目录</a>
+    <a href="match.html">匹配</a>
+    <a href="chat.html">聊天</a>
+    <a href="reviews.html">评价</a>
+    <a href="about.html">关于</a>
+    <a href="contact.html">联系</a>
+    <span style="float:right">
+      <a href="login.html">登录</a> / <a href="register.html">注册</a>
+    </span>
+  </nav>
+</header>
+<main>
+
+<div class="container">
+  <h2>用户目录</h2>
+  <div class="toolbar">
+    <input id="q_age_min" type="number" placeholder="最小年龄">
+    <input id="q_age_max" type="number" placeholder="最大年龄">
+    <select id="q_gender">
+      <option value="">不限性别</option>
+      <option value="female">女</option>
+      <option value="male">男</option>
+      <option value="other">其他</option>
+    </select>
+    <input id="q_interest" type="text" placeholder="兴趣关键词，如 摄影">
+    <button id="searchBtn">搜索</button>
+    <button id="resetBtn">重置</button>
+  </div>
+  <div class="grid" id="userGrid"></div>
+</div>
+
+</main>
+<footer>
+  <div>© 2025 LoveLink — 教学用原型。不涉及真实数据。</div>
+  <div><a href="privacy.html">隐私与安全说明</a></div>
+</footer>
+</body>
+</html>
