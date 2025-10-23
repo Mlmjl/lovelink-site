@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>注册 · LoveLink</title>
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="assets/app.js"></script>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="index.html">LoveLink</a>
+    <a href="catalogue.html">用户目录</a>
+    <a href="match.html">匹配</a>
+    <a href="chat.html">聊天</a>
+    <a href="reviews.html">评价</a>
+    <a href="about.html">关于</a>
+    <a href="contact.html">联系</a>
+    <span style="float:right">
+      <a href="login.html">登录</a> / <a href="register.html">注册</a>
+    </span>
+  </nav>
+</header>
+<main>
+
+<div class="container">
+  <h2>注册</h2>
+  <form id="registerForm">
+    <label>邮箱</label><input required type="email" name="email">
+    <label>密码</label><input required type="password" name="password" minlength="6">
+    <label>昵称</label><input required type="text" name="name">
+    <label>年龄</label><input required type="number" name="age" min="18" max="120">
+    <label>性别</label>
+    <select name="gender">
+      <option value="female">女</option>
+      <option value="male">男</option>
+      <option value="other">其他</option>
+    </select>
+    <label>兴趣（用逗号分隔）</label><input type="text" name="interests" placeholder="徒步, 摄影, 咖啡, 吉他">
+    <button type="submit">创建账户</button>
+  </form>
+  <p class="small">提示：教学演示使用浏览器本地存储，不上传网络。</p>
+</div>
+
+</main>
+<footer>
+  <div>© 2025 LoveLink — 教学用原型。不涉及真实数据。</div>
+  <div><a href="privacy.html">隐私与安全说明</a></div>
+</footer>
+</body>
+</html>
